@@ -1,0 +1,196 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway';
+}
+
+html, body{
+  height: 3000px;
+}
+
+body .limiter{
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#welcome-slide{
+  width: 100%;
+  position: relative;
+  height: 90vh;
+  max-height: 750px;
+  background: #000;
+  overflow: hidden;
+}
+
+#welcome-slide .black{
+  position: absolute;
+  top: 0px;
+  left: -4px;
+  width: calc(100% + 8px);
+  height: calc(90vh + 4px);
+  max-height: 754px;
+  background:url(img/wallpaper.jpg)#000;
+  background-size: auto 160%;
+  background-position: center;
+  z-index: 2;
+  opacity: 0.8;
+  filter: blur(4px);
+}
+
+#welcome-slide header{
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid #ccc;
+  z-index: 4;
+  padding: 0px 20px;
+  box-sizing: border-box;
+}
+
+#welcome-slide header ul{
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  list-style: none;
+  text-align: center;
+}
+
+#welcome-slide header ul a{
+  text-decoration: none;
+}
+
+#welcome-slide header ul li{
+  font-family: 'Lato';
+  display: inline-block;
+  color: #fff;
+  padding: 21px 30px;
+  font-size: 14px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  border-bottom: 4px solid transparent;
+  margin-left: -4px;
+  padding-top: 27px;
+  height: 72px;
+}
+
+#welcome-slide header ul li span{
+  margin-left: 4px;
+  font-size: 24px;
+  float: right;
+  margin-top: -4px;
+}
+
+#welcome-slide header ul a:nth-child(1) li{
+  margin-left: 0px;
+}
+
+#welcome-slide header ul li:hover{
+  border-bottom: 4px solid #fff;
+}
+
+#welcome-slide header ul .logo{
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+#welcome-slide header ul .logo img{
+  height: 72px;
+}
+
+#welcome-slide header ul .login{
+  font-family: 'Lato';
+  display: inline-block;
+  color: #fff;
+  padding: 10px 24px;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: capitalize;
+  box-sizing: border-box;
+  position: absolute;
+  right: 124px;
+  top: 17px;
+  border: 2px solid #fff;
+  border-radius: 3600px;
+}
+
+#welcome-slide header ul .register{
+  font-family: 'Lato';
+  display: inline-block;
+  color: #fff;
+  padding: 10px 24px;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: capitalize;
+  box-sizing: border-box;
+  position: absolute;
+  right: 0px;
+  top: 17px;
+  border: 2px solid #fff;
+  border-radius: 3600px;
+}
+
+#welcome-slide .principal{
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  height: calc(100% - 73px);
+  z-index: 4;
+  display: table;
+}
+
+#welcome-slide .principal .principal-cont{
+  position: relative;
+  width: 100%;
+  height: calc(100% - 73px);
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#welcome-slide .principal .principal-cont h2{
+  font-size: 60px;
+  font-weight: lighter;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+#welcome-slide .principal .principal-cont p{
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+#welcome-slide .principal .principal-cont .button{
+  padding: 15px;
+  box-sizing: border-box;
+  background: #333;
+  color: #fff;
+  border-radius: 3600px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Lato';
+  font-weight: bold;
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+#welcome-slide .principal .principal-cont .button:hover{
+  background: #191919;
+}
+
+#body-content{
+  width: 100%;
+  position: relative;
+}
+
+#welcome-slide .principal .principal-cont .button + p{
+  font-size: 15px;
+  font-weight: bold;
+}
