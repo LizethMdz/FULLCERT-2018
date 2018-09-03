@@ -8,12 +8,6 @@ html, body{
   height: 3000px;
 }
 
-/*body .limiter{
-  position: relative;
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
-}*/
 body{
     margin: 0 auto;
     position: relative;
