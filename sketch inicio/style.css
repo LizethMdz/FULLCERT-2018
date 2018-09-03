@@ -293,9 +293,20 @@ html, body{
 .body-contenido{
   width: 100%;
   height: auto;
-  
+
   position: relative;
 }
+/*FIRMAS*/
+.firmas{
+  width: 100%;
+  background: #000;
+  display: block;
+  position: relative;
+  height: 250px;
+
+
+}
+
 /*CONTENIDO*/
 .contenido{
   background: #F5F4F1  ;
