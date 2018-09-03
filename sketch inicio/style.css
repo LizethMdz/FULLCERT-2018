@@ -244,8 +244,8 @@ body{
   left: 0;
   color:white;
   display: flex;
+  font-size: 14px;
   flex-direction: column;
-  padding: 15px 50px;
   justify-content: center;
   align-items: center;
   text-align: center;
