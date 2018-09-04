@@ -4,16 +4,6 @@
   font-family: 'Raleway';
 }
 
-html, body{
-  height: 3000px;
-}
-
-body{
-    margin: 0 auto;
-    position: relative;
-    width: 100%;
-}
-
 #welcome-slide{
   width: 100%;
   position: relative;
@@ -364,6 +354,7 @@ body{
   position: fixed;
   bottom: 0;
   color: #fff;
+  z-index: 10000;
 }
 
 .footer p{
