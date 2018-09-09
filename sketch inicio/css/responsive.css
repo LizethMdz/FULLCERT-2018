@@ -1,0 +1,159 @@
+@media screen and (max-width: 1130px) {
+
+  #welcome-slide header .menu-b{
+    display: none;
+    font-family: 'Lato';
+    color: #fff;
+    padding: 10px 24px;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0px;
+    width: 105px;
+    top: 17px;
+    max-width: 1000px;
+    border: 2px solid #fff;
+    border-radius: 3600px;
+    text-decoration: none;
+  }
+
+  #welcome-slide header .menu-b span{
+    margin-right: 4px;
+  }
+
+  #welcome-slide header .menu-x{
+    display: none;
+    font-family: 'Lato';
+    color: #fff;
+    padding: 10px 24px;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    position: absolute;
+    right: 0px;
+    width: 100px;
+    top: 17px;
+    border: 2px solid #fff;
+    border-radius: 3600px;
+    text-decoration: none;
+    max-width: 1000px;
+  }
+
+  #welcome-slide header .menu-x span{
+    margin-right: 4px;
+  }
+
+    #welcome-slide{
+      padding-top: 142px;
+      box-sizing: border-box;
+    }
+
+    #welcome-slide header{
+      position: absolute;
+      z-index: 10;
+      top: 0px;
+    }
+
+    #welcome-slide header ul{
+      display: block;
+      position: fixed;
+      left:-100%;
+      top: 0px;
+      width: calc(100% - 70px);
+      max-width: 300px;
+      height: 100%;
+      background: #191919;
+      z-index: 10;
+      transition: 0.5s;
+    }
+
+    #welcome-slide header ul li{
+      display: block;
+      border-bottom: 1px solid #333;
+      text-align: left;
+      padding: 20px;
+      box-sizing: border-box;
+      padding-bottom: 20px;
+      height: auto;
+    }
+
+    #welcome-slide header ul li:hover{
+      border-bottom: 1px solid #333;
+    }
+
+    #welcome-slide header .login{
+      right: 0px;
+    }
+
+    #welcome-slide header .register{
+      display: none;
+    }
+
+    #welcome-slide header .login-2{
+    display: block;
+    }
+
+    #welcome-slide header .register-2{
+    display: block;
+    }
+
+    #welcome-slide header .logo{
+      position: relative;
+    }
+
+    #welcome-slide header .menu-b{
+      display: inline-block;
+      width: 105px;
+    }
+
+    #welcome-slide header .menu-x{
+      display: none;
+      padding: 8px;
+      padding-left: 10px;
+      box-sizing: border-box;
+      width: 42px;
+      font-size: 18px;
+    }
+
+    #welcome-slide .principal .principal-cont .button{
+      width: 100%;
+      max-width: 300px;
+    }
+
+}
+
+@media screen and (max-width: 560px) {
+
+    #welcome-slide header .menu-b{
+      font-size: 0px;
+      padding: 10px 8px;
+      padding-left: 10px;
+      width: 42px;
+      height: 42px;
+      text-align: center;
+      box-sizing: border-box;
+    }
+
+    #welcome-slide header .menu-b span{
+      font-size: 17px;
+    }
+
+    #welcome-slide header .login{
+      max-width: 0px;
+      border: 0px;
+      font-size: 0px;
+      overflow: hidden;
+    }
+
+    #welcome-slide .principal .principal-cont h2{
+      font-size: 50px;
+    }
+
+    #welcome-slide .principal .principal-cont p{
+      font-size: 16px;
+    }
+
+}

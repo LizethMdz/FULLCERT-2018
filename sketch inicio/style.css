@@ -3,11 +3,23 @@
   padding: 0;
   font-family: 'Raleway';
 }
+body{
+  transition: 0.5s;
+  position: relative;
+  background: #191919;
+}
+body .limiter{
+
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
 
 #welcome-slide{
   width: 100%;
   position: relative;
-  height: 90vh;
+  height: 95vh;
   max-height: 750px;
   background: #000;
   overflow: hidden;
@@ -18,32 +30,35 @@
   top: 0px;
   left: -4px;
   width: calc(100% + 8px);
-  height: calc(90vh + 4px);
+  height: calc(100vh + 4px);
   max-height: 754px;
-  background:url(img/wallpaper.jpg)#000;
+  /*background:url(img/wallpaper.jpg)#00cc44;*/
   background-size: auto 160%;
   background-position: center;
   z-index: 2;
   opacity: 0.8;
   filter: blur(4px);
 }
-
+/*MODIFICAR*/
 #welcome-slide header{
+
   width: 100%;
   position: relative;
   border-bottom: 1px solid #ccc;
   z-index: 4;
   padding: 0px 20px;
   box-sizing: border-box;
+  height: 100px;
+  text-align: center;
+  
 }
 
 #welcome-slide header ul{
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
-  position: relative;
+  display: inline-block;
   list-style: none;
   text-align: center;
+  margin: 20px auto;
+  width: 100%;
 }
 
 #welcome-slide header ul a{
@@ -59,7 +74,7 @@
   font-weight: bolder;
   text-transform: uppercase;
   box-sizing: border-box;
-  border-bottom: 4px solid transparent;
+  border-bottom: 2px solid transparent;
   margin-left: -4px;
   padding-top: 27px;
   height: 72px;
@@ -77,21 +92,37 @@
 }
 
 #welcome-slide header ul li:hover{
-  border-bottom: 4px solid #fff;
+  border-bottom: 2px solid #fff;
 }
 
-#welcome-slide header ul .logo{
+#welcome-slide header .logo{
   display: inline-block;
   position: absolute;
-  top: 0px;
+  top: 10px;
   left: 0px;
+  text-decoration: none;
 }
 
-#welcome-slide header ul .logo img{
+#welcome-slide header .logo img{
   height: 72px;
 }
 
-#welcome-slide header ul .login{
+#welcome-slide header .menu-b{
+  max-width: 0px;
+  border:0px;
+  overflow: hidden;
+  position: absolute;
+}
+
+
+#welcome-slide header .menu-x{
+  max-width: 0px;
+  border:0px;
+  overflow: hidden;
+  position: absolute;
+}
+
+#welcome-slide header .login{
   font-family: 'Lato';
   display: inline-block;
   color: #fff;
@@ -105,9 +136,10 @@
   top: 17px;
   border: 2px solid #fff;
   border-radius: 3600px;
+  text-decoration: none;
 }
 
-#welcome-slide header ul .register{
+#welcome-slide header .register{
   font-family: 'Lato';
   display: inline-block;
   color: #fff;
@@ -121,6 +153,45 @@
   top: 17px;
   border: 2px solid #fff;
   border-radius: 3600px;
+  text-decoration: none;
+}
+
+#welcome-slide header .login-2{
+  display: none;
+  width: calc(100% - 40px);
+  height: 40px;
+  left: 20px;
+  bottom: 65px;
+  font-family: 'Lato';
+  color: #fff;
+  padding: 10px 24px;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: capitalize;
+  box-sizing: border-box;
+  position: absolute;
+  border: 2px solid #fff;
+  border-radius: 3600px;
+  text-decoration: none;
+}
+
+#welcome-slide header .register-2{
+  display: none;
+  width: calc(100% - 40px);
+  height: 40px;
+  left: 20px;
+  bottom: 20px;
+  font-family: 'Lato';
+  color: #fff;
+  padding: 10px 24px;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: capitalize;
+  box-sizing: border-box;
+  position: absolute;
+  border: 2px solid #fff;
+  border-radius: 3600px;
+  text-decoration: none;
 }
 
 #welcome-slide .principal{
@@ -131,6 +202,8 @@
   height: calc(100% - 73px);
   z-index: 4;
   display: table;
+  padding: 0px 20px;
+  box-sizing: border-box;
 }
 
 #welcome-slide .principal .principal-cont{
@@ -152,7 +225,9 @@
 #welcome-slide .principal .principal-cont p{
   font-size: 20px;
   color: #fff;
+  margin: 0 auto;
   margin-bottom: 20px;
+  width: 80%;
 }
 
 #welcome-slide .principal .principal-cont .button{
@@ -174,25 +249,27 @@
   background: #191919;
 }
 
-#body-content{
-  width: 100%;
-  position: relative;
-}
-
 #welcome-slide .principal .principal-cont .button + p{
   font-size: 15px;
   font-weight: bold;
 }
 
+#body-content{
+  width: 100%;
+  background: #fff;
+  position: relative;
+}
+
+
 /*SLIDE IMAGENES*/
-.limiter{
+.limiter-2{
   position: relative;
   display: block;
   width: 100%;
   top:50px;
 }
 
-.limiter .text-galeria{
+.limiter-2 .text-galeria{
   padding: 20px 20px;
   display: flex;
   align-items: center;
@@ -340,7 +417,6 @@
 .contenido{
   background: #F5F4F1  ;
   width: 100%;
-  top:100px;
   height: 400px;
   display: block;
   position: relative;
@@ -349,8 +425,9 @@
 /*FOOTER*/
 .footer{
   width: 100%;
-  background: #000;
+  background: #00cc44;
   display: inline;
+
   position: fixed;
   bottom: 0;
   color: #fff;
@@ -361,7 +438,7 @@
   display: flex;
   align-items:center;
   justify-content: center;
-  padding: 30px;
+  padding: 10px;
 }
 
 
@@ -407,3 +484,5 @@
     width: 50%;
   }
 }
+
+/*LOGIN*/
